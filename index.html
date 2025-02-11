@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Escola DNC</title>
+</head>
+<body>
+    <!--MENU SUPERIOR-->
+    <div id="menu-superior">
+        <a href="https://www.escoladnc.com.br/"><img id="logo" src="./imagem/logo.svg" alt="Erro"></a>
+        <h1 id="titulo-menusuperior"> Dê os Primeiros Passos da<br> sua Carreira em Tecnologia </h1>
+        <p id="texto-menusuper"> Inscreva-se no curso gratuito de introdução à<br> Tecnologia da DNC School e aprenda os Principais<br> Fundamentos para Construir experiências efetivas. </p>
+    </div>
+    <!--MENU INFORMACIONAL-->
+    <div id="menu-informativo"> 
+        <p class="texto-info"><img src="./incone/certificado.svg" class="incone" alt=""> Certificado de conclusão </p>
+        <p class="texto-info">  <img src="./incone/relogio.svg" class="incone"alt=""> 4 horas de conteúdo </p>
+        <p class="texto-info"> <img src="./incone/camera.svg" class="incone"alt=""> Aulas online gravadas </p>
+    </div>
+    <!--VIDEO CENTRO-->
+    <div id="secao-video">
+        <iframe id="video" width="502" height="283" src="https://www.youtube.com/embed/ITxGkd9h4n4" title="DNC - A escola inovadora que forma profissionais de alta perfomance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+        <div>
+            <h1 id="titulo-textovideo">
+                Aprenda com especialistas e<br> comece seu primeiro projeto<br><br>
+            </h1>
+            <p id="texto-video" class="textovideo">Conheça o processo de desenvolvimento e entenda como utilizar<br> os principais métodos e ferramentas da área para resolver<br> problemas complexos.<br> <br> Conquiste seu certificado e desenvolva um projeto prático para<br> aplicar seus conhecimentos.</p>
+        </div>
+        
+    </div>
+         <!-- TESTE PARA AVALIAR DEPOIS MONTAR CARD
+        <P class="texto-card"><img src="./imagem/LEO.SVG" class="fotocard" alt=""> “Gostei muito da metodologia e da<br> plataforma da Escola DNC. Os materiais<br> são todos muito bons”<br> <br> <p id="nomeleo">Leonardo, desenvolvedor Back-End</p></P>
+       
+        <P class="texto-card"><img src="./imagem/SAMANTHA.SVG" class="fotocard" alt=""> “O curso da foi a mudança que eu precisava<br> para alcançar meus objetivos profissionais <br> <br> <p id="nomesamantha">Samantha, desenvolvedora Front-End</p></P>
+      
+        <P class="texto-card"><img src="./imagem/verificar.svg" class="fotocard" alt=""> “O curso da foi a mudança que eu precisava<br> para alcançar meus objetivos profissionais <br> <br> <p id="nomesamantha">Samantha, desenvolvedora Front-End</p></P>
+        -->
+    <!--CARROSSEL-->
+    <!--<div id="card">
+        <h1 id="titulo-card"> Mais de 500 alunos já iniciaram seus estudos</h1>
+        <div id="divcards">
+            <img id="seta-esq" class="seta" src="./incone/seta -esq.svg" alt="">
+             <img id="Leonardo" class="cards" src="./CARDS/LEO.SVG" alt="">
+             <img id="Samantha" class="cards" src="./CARDS/SAMANTHA.SVG" alt="">
+             <img id="Bruna" class="cards"src="./CARDS/BRUNA.SVG" alt="">
+            <img onclick="MoveSetaDir()" id="seta-dir" class= "seta" src="./incone/seta-dir.svg" alt="">
+        </div>-->
+<div id="carrossel">
+
+<h1 id="titulo-carrossel"> Mais de 500 alunos já iniciaram seus estudos </h1>
+<div id="div-cards">
+    <img onclick="MoveSetaEsq()" id="seta-esq" class="seta" src="./incone/seta -esq.svg" alt="">
+    <img id="Leonardo" class="cards" src="./CARDS/LEO.SVG" alt="">
+    <img id="Samantha" class="cards" src="./CARDS/SAMANTHA.SVG" alt="">
+    <img id="Bruna" class="cards" src="./CARDS/BRUNA.SVG" alt="">
+   <img onclick="MoveSetaDir()" id="seta-dir" class= "seta" src="./incone/seta-dir.svg" alt="">
+
+</div>
+    
+
+</div>
+       
+    </div>
+<!--FORMULARIO-->
+<div id="Formulario">
+    <h1 id="Titulo-formulario">Comece agora mesmo e dê o próximo passo da sua carreira</h1>
+    <!--comentt FORM  
+    <form id="form-input">
+            <div class="inputform">
+                <input type="text" placeholder="Nome">
+            </div>
+            <div class="inputform">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputform">
+                <input type="number" placeholder="Number">
+            </div>
+            
+
+        </form>
+    -->
+    <form action="https://api.sheetmonkey.io/form/wNBjXvnY8YjButj2XeD264" method="post">
+            <input type="text" placeholder="Nome" name="Name" required> <br>
+            <input type="email" placeholder="email" name="Email" required> <br>
+            <input type="number" placeholder="Number" name="Phone"><br>
+            <button type="submit"> Acesse a ementa grátis </button>
+        
+
+    </form>
+
+</div>
+    
+   <script src="index.js"></script>
+</body>
+</html>
